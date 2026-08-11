@@ -6,11 +6,12 @@ export const LEVELS = levelsJson as LevelMeta[];
 // Each pool is imported dynamically so only the selected level's JSON is
 // downloaded, keeping the initial bundle small.
 const LOADERS: Record<string, () => Promise<{ default: unknown }>> = {
+  A1: () => import("./questions/A1.json"),
+  A2: () => import("./questions/A2.json"),
   B1: () => import("./questions/B1.json"),
   B2: () => import("./questions/B2.json"),
   C1: () => import("./questions/C1.json"),
   C2: () => import("./questions/C2.json"),
-  D1: () => import("./questions/D1.json"),
 };
 
 const cache = new Map<string, Question[]>();

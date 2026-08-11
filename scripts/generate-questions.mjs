@@ -1,7 +1,7 @@
 /**
  * Question pool generator.
  *
- * Produces, for every English level (B1..D1), a large pool (>= 600) of
+ * Produces, for every MCER level (A1..C2), a large pool (>= 600) of
  * multiple-choice questions with 5 options each. Every question carries the
  * correct answer index and a Spanish explanation of WHY that option is correct.
  *
@@ -211,6 +211,90 @@ const ADJECTIVES = [
 /* es = Spanish gloss, syn = English synonym, ant = English antonym.   */
 /* ------------------------------------------------------------------ */
 const VOCAB = {
+  A1: [
+    { word: "good", es: "bueno", syn: "nice", ant: "bad" },
+    { word: "bad", es: "malo", syn: "poor", ant: "good" },
+    { word: "hot", es: "caliente", syn: "warm", ant: "cold" },
+    { word: "cold", es: "frío", syn: "chilly", ant: "hot" },
+    { word: "new", es: "nuevo", syn: "recent", ant: "old" },
+    { word: "old", es: "viejo", syn: "aged", ant: "new" },
+    { word: "tall", es: "alto", syn: "high", ant: "short" },
+    { word: "short", es: "bajo", syn: "small", ant: "tall" },
+    { word: "long", es: "largo", syn: "lengthy", ant: "short" },
+    { word: "young", es: "joven", syn: "youthful", ant: "old" },
+    { word: "happy", es: "feliz", syn: "glad", ant: "sad" },
+    { word: "sad", es: "triste", syn: "unhappy", ant: "happy" },
+    { word: "fast", es: "rápido", syn: "quick", ant: "slow" },
+    { word: "slow", es: "lento", syn: "unhurried", ant: "fast" },
+    { word: "clean", es: "limpio", syn: "tidy", ant: "dirty" },
+    { word: "dirty", es: "sucio", syn: "messy", ant: "clean" },
+    { word: "open", es: "abierto", syn: "unlocked", ant: "closed" },
+    { word: "full", es: "lleno", syn: "filled", ant: "empty" },
+    { word: "empty", es: "vacío", syn: "vacant", ant: "full" },
+    { word: "big", es: "grande", syn: "large", ant: "small" },
+    { word: "small", es: "pequeño", syn: "little", ant: "big" },
+    { word: "easy", es: "fácil", syn: "simple", ant: "hard" },
+    { word: "hard", es: "difícil", syn: "difficult", ant: "easy" },
+    { word: "rich", es: "rico", syn: "wealthy", ant: "poor" },
+    { word: "poor", es: "pobre", syn: "needy", ant: "rich" },
+    { word: "day", es: "día", syn: "daytime", ant: "night" },
+    { word: "night", es: "noche", syn: "nighttime", ant: "day" },
+    { word: "love", es: "amar", syn: "adore", ant: "hate" },
+    { word: "like", es: "gustar", syn: "enjoy", ant: "dislike" },
+    { word: "start", es: "empezar", syn: "begin", ant: "stop" },
+    { word: "stop", es: "parar", syn: "halt", ant: "start" },
+    { word: "buy", es: "comprar", syn: "purchase", ant: "sell" },
+    { word: "come", es: "venir", syn: "approach", ant: "go" },
+    { word: "give", es: "dar", syn: "provide", ant: "take" },
+    { word: "win", es: "ganar", syn: "triumph", ant: "lose" },
+    { word: "first", es: "primero", syn: "initial", ant: "last" },
+    { word: "right", es: "correcto", syn: "correct", ant: "wrong" },
+    { word: "near", es: "cerca", syn: "close", ant: "far" },
+    { word: "high", es: "alto", syn: "elevated", ant: "low" },
+    { word: "light", es: "ligero", syn: "lightweight", ant: "heavy" },
+  ],
+  A2: [
+    { word: "begin", es: "empezar", syn: "start", ant: "finish" },
+    { word: "finish", es: "terminar", syn: "complete", ant: "begin" },
+    { word: "cheap", es: "barato", syn: "inexpensive", ant: "expensive" },
+    { word: "expensive", es: "caro", syn: "costly", ant: "cheap" },
+    { word: "strong", es: "fuerte", syn: "powerful", ant: "weak" },
+    { word: "weak", es: "débil", syn: "feeble", ant: "strong" },
+    { word: "quiet", es: "silencioso", syn: "silent", ant: "loud" },
+    { word: "loud", es: "ruidoso", syn: "noisy", ant: "quiet" },
+    { word: "tired", es: "cansado", syn: "sleepy", ant: "energetic" },
+    { word: "angry", es: "enojado", syn: "mad", ant: "calm" },
+    { word: "kind", es: "amable", syn: "nice", ant: "cruel" },
+    { word: "polite", es: "educado", syn: "courteous", ant: "rude" },
+    { word: "safe", es: "seguro", syn: "secure", ant: "dangerous" },
+    { word: "wet", es: "mojado", syn: "damp", ant: "dry" },
+    { word: "dry", es: "seco", syn: "arid", ant: "wet" },
+    { word: "true", es: "verdadero", syn: "accurate", ant: "false" },
+    { word: "false", es: "falso", syn: "untrue", ant: "true" },
+    { word: "early", es: "temprano", syn: "premature", ant: "late" },
+    { word: "late", es: "tarde", syn: "delayed", ant: "early" },
+    { word: "remember", es: "recordar", syn: "recall", ant: "forget" },
+    { word: "forget", es: "olvidar", syn: "overlook", ant: "remember" },
+    { word: "arrive", es: "llegar", syn: "reach", ant: "depart" },
+    { word: "allow", es: "permitir", syn: "permit", ant: "forbid" },
+    { word: "answer", es: "responder", syn: "reply", ant: "ask" },
+    { word: "keep", es: "guardar", syn: "retain", ant: "lose" },
+    { word: "increase", es: "aumentar", syn: "grow", ant: "decrease" },
+    { word: "decrease", es: "disminuir", syn: "reduce", ant: "increase" },
+    { word: "famous", es: "famoso", syn: "renowned", ant: "unknown" },
+    { word: "modern", es: "moderno", syn: "current", ant: "ancient" },
+    { word: "wide", es: "ancho", syn: "broad", ant: "narrow" },
+    { word: "narrow", es: "estrecho", syn: "slim", ant: "wide" },
+    { word: "healthy", es: "sano", syn: "fit", ant: "sick" },
+    { word: "brave", es: "valiente", syn: "courageous", ant: "cowardly" },
+    { word: "empty", es: "vacío", syn: "vacant", ant: "full" },
+    { word: "same", es: "mismo", syn: "identical", ant: "different" },
+    { word: "enough", es: "suficiente", syn: "sufficient", ant: "insufficient" },
+    { word: "clever", es: "listo", syn: "smart", ant: "foolish" },
+    { word: "beautiful", es: "hermoso", syn: "pretty", ant: "ugly" },
+    { word: "difficult", es: "difícil", syn: "hard", ant: "easy" },
+    { word: "hate", es: "odiar", syn: "detest", ant: "love" },
+  ],
   B1: [
     { word: "happy", es: "feliz", syn: "glad", ant: "sad" },
     { word: "big", es: "grande", syn: "large", ant: "small" },
@@ -379,48 +463,6 @@ const VOCAB = {
     { word: "harangue", es: "arenga", syn: "tirade", ant: "compliment" },
     { word: "impecunious", es: "sin dinero", syn: "penniless", ant: "wealthy" },
   ],
-  D1: [
-    { word: "perspicacious", es: "perspicaz", syn: "discerning", ant: "obtuse" },
-    { word: "intransigent", es: "intransigente", syn: "uncompromising", ant: "flexible" },
-    { word: "mellifluous", es: "melifluo", syn: "dulcet", ant: "cacophonous" },
-    { word: "pusillanimous", es: "pusilánime", syn: "timid", ant: "valiant" },
-    { word: "sycophant", es: "adulador", syn: "toady", ant: "critic" },
-    { word: "truculent", es: "truculento", syn: "pugnacious", ant: "docile" },
-    { word: "verisimilitude", es: "verosimilitud", syn: "plausibility", ant: "implausibility" },
-    { word: "obsequious", es: "obsequioso", syn: "servile", ant: "domineering" },
-    { word: "pellucid", es: "diáfano", syn: "transparent", ant: "opaque" },
-    { word: "recondite", es: "recóndito", syn: "arcane", ant: "commonplace" },
-    { word: "sanguine", es: "optimista", syn: "hopeful", ant: "despondent" },
-    { word: "temerity", es: "temeridad", syn: "audacity", ant: "timidity" },
-    { word: "ineffable", es: "inefable", syn: "indescribable", ant: "expressible" },
-    { word: "jejune", es: "insípido", syn: "insipid", ant: "stimulating" },
-    { word: "kaleidoscopic", es: "caleidoscópico", syn: "multifaceted", ant: "monotonous" },
-    { word: "lugubrious", es: "lúgubre", syn: "mournful", ant: "cheerful" },
-    { word: "maladroit", es: "torpe", syn: "clumsy", ant: "dexterous" },
-    { word: "nugatory", es: "nulo", syn: "trifling", ant: "significant" },
-    { word: "obstreperous", es: "ruidoso", syn: "unruly", ant: "docile" },
-    { word: "propitious", es: "propicio", syn: "favorable", ant: "inauspicious" },
-    { word: "quotidian", es: "cotidiano", syn: "everyday", ant: "extraordinary" },
-    { word: "refractory", es: "refractario", syn: "obstinate", ant: "tractable" },
-    { word: "sedulous", es: "diligente", syn: "assiduous", ant: "indolent" },
-    { word: "turgid", es: "ampuloso", syn: "bombastic", ant: "concise" },
-    { word: "umbrage", es: "resentimiento", syn: "offense", ant: "delight" },
-    { word: "vituperate", es: "vituperar", syn: "berate", ant: "praise" },
-    { word: "welter", es: "revoltijo", syn: "jumble", ant: "order" },
-    { word: "xenophobia", es: "xenofobia", syn: "prejudice", ant: "tolerance" },
-    { word: "zenith", es: "cenit", syn: "apex", ant: "nadir" },
-    { word: "abnegation", es: "abnegación", syn: "self-denial", ant: "indulgence" },
-    { word: "bellicose", es: "belicoso", syn: "warlike", ant: "irenic" },
-    { word: "circumlocution", es: "circunloquio", syn: "verbosity", ant: "directness" },
-    { word: "diaphanous", es: "diáfano", syn: "sheer", ant: "opaque" },
-    { word: "effrontery", es: "descaro", syn: "impudence", ant: "diffidence" },
-    { word: "fulminate", es: "fulminar", syn: "denounce", ant: "endorse" },
-    { word: "grandiloquent", es: "grandilocuente", syn: "pompous", ant: "unpretentious" },
-    { word: "hebetude", es: "letargo", syn: "lethargy", ant: "alertness" },
-    { word: "inchoate", es: "incipiente", syn: "rudimentary", ant: "developed" },
-    { word: "limpid", es: "límpido", syn: "lucid", ant: "murky" },
-    { word: "munificent", es: "munífico", syn: "lavish", ant: "miserly" },
-  ],
 };
 
 /* Generic English distractor pool (unrelated to any vocab answers). */
@@ -434,6 +476,35 @@ const GENERIC_EN = [
 
 /* Phrasal-verb banks per level: { pv, es, en }. */
 const PHRASALS = {
+  A1: [
+    { pv: "get up", es: "levantarse", en: "to rise from bed" },
+    { pv: "sit down", es: "sentarse", en: "to take a seat" },
+    { pv: "stand up", es: "ponerse de pie", en: "to rise to your feet" },
+    { pv: "turn on", es: "encender", en: "to switch a device on" },
+    { pv: "turn off", es: "apagar", en: "to switch a device off" },
+    { pv: "put on", es: "ponerse (ropa)", en: "to dress in clothes" },
+    { pv: "take off", es: "quitarse (ropa)", en: "to remove clothing" },
+    { pv: "wake up", es: "despertarse", en: "to stop sleeping" },
+    { pv: "come in", es: "entrar", en: "to enter a place" },
+    { pv: "go out", es: "salir", en: "to leave a place" },
+    { pv: "look for", es: "buscar", en: "to search for something" },
+    { pv: "wash up", es: "lavar los platos", en: "to clean the dishes" },
+  ],
+  A2: [
+    { pv: "get on", es: "subirse (a un transporte)", en: "to board a vehicle" },
+    { pv: "get off", es: "bajarse (de un transporte)", en: "to leave a vehicle" },
+    { pv: "grow up", es: "crecer", en: "to become an adult" },
+    { pv: "give up", es: "rendirse", en: "to stop trying" },
+    { pv: "look after", es: "cuidar", en: "to take care of someone" },
+    { pv: "find out", es: "averiguar", en: "to discover information" },
+    { pv: "come back", es: "regresar", en: "to return" },
+    { pv: "throw away", es: "tirar", en: "to discard in the rubbish" },
+    { pv: "fill in", es: "rellenar", en: "to complete a form" },
+    { pv: "pick up", es: "recoger", en: "to lift or collect something" },
+    { pv: "hurry up", es: "darse prisa", en: "to move faster" },
+    { pv: "run out of", es: "quedarse sin", en: "to have no more of something" },
+    { pv: "switch off", es: "apagar un aparato", en: "to power a device down" },
+  ],
   B1: [
     { pv: "give up", es: "rendirse / dejar de hacer algo", en: "to stop trying" },
     { pv: "look after", es: "cuidar", en: "to take care of someone" },
@@ -501,23 +572,6 @@ const PHRASALS = {
     { pv: "lord over", es: "dominar con arrogancia", en: "to behave superior toward" },
     { pv: "muscle in", es: "entrometerse por la fuerza", en: "to force one's way in" },
     { pv: "palm off", es: "endosar (algo no deseado)", en: "to dispose of by deceit" },
-  ],
-  D1: [
-    { pv: "cast aspersions on", es: "difamar", en: "to make damaging insinuations" },
-    { pv: "hold forth", es: "perorar", en: "to speak at length pompously" },
-    { pv: "inveigh against", es: "arremeter contra", en: "to protest strongly against" },
-    { pv: "lord it over", es: "avasallar", en: "to act in a superior way toward" },
-    { pv: "make away with", es: "llevarse / robar", en: "to steal and escape" },
-    { pv: "run roughshod over", es: "atropellar", en: "to disregard someone harshly" },
-    { pv: "set great store by", es: "dar gran valor a", en: "to value highly" },
-    { pv: "sugar-coat", es: "edulcorar", en: "to make more palatable than reality" },
-    { pv: "take umbrage at", es: "ofenderse por", en: "to feel offended by" },
-    { pv: "trot out", es: "sacar a relucir (lo de siempre)", en: "to repeat a tired argument" },
-    { pv: "cotton on to", es: "caer en la cuenta de", en: "to begin to understand" },
-    { pv: "ferret out", es: "desenterrar", en: "to discover by searching diligently" },
-    { pv: "gad about", es: "callejear", en: "to roam in search of pleasure" },
-    { pv: "hive off", es: "escindir", en: "to separate part of a business" },
-    { pv: "winkle out", es: "sonsacar", en: "to extract with difficulty" },
   ],
 };
 
@@ -646,8 +700,114 @@ const SUBJECTS_3RD = ["She", "He", "My sister", "The teacher", "My brother", "An
 const SUBJECTS_PL = ["They", "We", "My friends", "The students", "The children", "Those workers"];
 const OBJECTS = ["the report", "the lesson", "a new song", "the letter", "the project", "the message", "the exercise", "the plan", "the article", "the story"];
 
-function buildForLevel(level, difficultyCap, rng) {
-  const questions = [];
+/* ------------------------------------------------------------------ */
+/* A1/A2 foundational grammar (to be, plurals, there is/are,           */
+/* possessives, demonstratives, have got). Keeps the basic levels      */
+/* level-appropriate and provides ample volume.                        */
+/* ------------------------------------------------------------------ */
+const BE_MAP = { I: "am", You: "are", He: "is", She: "is", It: "is", We: "are", They: "are" };
+const BE_COMP = ["a student", "a teacher", "at home", "very happy", "from Spain",
+  "ready", "tired", "here", "my friend", "at school", "hungry", "busy"];
+const PLURAL_ITEMS = [
+  ["book", "books"], ["car", "cars"], ["box", "boxes"], ["city", "cities"],
+  ["child", "children"], ["man", "men"], ["woman", "women"], ["foot", "feet"],
+  ["tooth", "teeth"], ["person", "people"], ["baby", "babies"], ["watch", "watches"],
+  ["bus", "buses"], ["knife", "knives"], ["leaf", "leaves"], ["photo", "photos"],
+  ["party", "parties"], ["family", "families"], ["glass", "glasses"], ["dish", "dishes"],
+  ["story", "stories"], ["key", "keys"], ["toy", "toys"], ["potato", "potatoes"],
+  ["tomato", "tomatoes"], ["mouse", "mice"], ["house", "houses"], ["dog", "dogs"],
+];
+const TIA_ITEMS = [
+  ["___ a book on the table.", "There is"], ["___ two cats in the garden.", "There are"],
+  ["___ some milk in the fridge.", "There is"], ["___ many people here.", "There are"],
+  ["___ a problem with the car.", "There is"], ["___ three chairs in the room.", "There are"],
+  ["___ an apple on the plate.", "There is"], ["___ five students in class.", "There are"],
+  ["___ a dog in the street.", "There is"], ["___ some books on the shelf.", "There are"],
+  ["___ a bank near here.", "There is"], ["___ two windows in the kitchen.", "There are"],
+  ["___ water in the bottle.", "There is"], ["___ four seasons in a year.", "There are"],
+];
+const POS_MAP = { I: "my", You: "your", He: "his", She: "her", We: "our", They: "their" };
+const POS_THINGS = ["phone", "house", "car", "book", "dog", "bag", "room", "bike", "pen", "family"];
+const DEM_ITEMS = [
+  ["___ book here is mine.", "This"], ["___ books here are mine.", "These"],
+  ["___ car over there is new.", "That"], ["___ cars over there are new.", "Those"],
+  ["___ pen in my hand is blue.", "This"], ["___ shoes on my feet are old.", "These"],
+  ["___ house across the river is big.", "That"], ["___ mountains far away are high.", "Those"],
+  ["___ apple I am eating is sweet.", "This"], ["___ children next to me are happy.", "These"],
+  ["___ bird in the sky is fast.", "That"], ["___ stars in the night are bright.", "Those"],
+];
+const HAVEGOT_ITEMS = [
+  ["I ___ a new bike.", "have got"], ["She ___ two brothers.", "has got"],
+  ["They ___ a big house.", "have got"], ["He ___ a nice car.", "has got"],
+  ["We ___ a small dog.", "have got"], ["My sister ___ long hair.", "has got"],
+  ["You ___ a good idea.", "have got"], ["The dog ___ a red ball.", "has got"],
+  ["My parents ___ a garden.", "have got"], ["It ___ four legs.", "has got"],
+];
+
+function buildBasics(level, rng) {
+  const out = [];
+  const push = (q) => { if (q) out.push(q); };
+
+  for (const s of Object.keys(BE_MAP)) for (const c of BE_COMP) {
+    push(assemble({
+      level, category: "grammar", prompt: `${s} ___ ${c}.`, correct: BE_MAP[s],
+      distractors: ["am", "is", "are", "be", "being"].filter((x) => x !== BE_MAP[s]),
+      fallbackPool: ["was", "were", "been"],
+      explanation: `El verbo "to be" en presente con el sujeto "${s}" se conjuga como "${BE_MAP[s]}".`,
+    }, rng));
+  }
+
+  for (const [sing, plur] of PLURAL_ITEMS) {
+    push(assemble({
+      level, category: "grammar", prompt: `Elige el plural correcto de "${sing}".`, correct: plur,
+      distractors: [sing, `${sing}s`, `${sing}es`, `${sing}ies`].filter((x) => x !== plur),
+      fallbackPool: [`${sing}'s`, `the ${sing}`, `many ${sing}`],
+      explanation: `El plural de "${sing}" es "${plur}".`,
+    }, rng));
+  }
+
+  for (const [prompt, correct] of TIA_ITEMS) {
+    push(assemble({
+      level, category: "grammar", prompt, correct,
+      distractors: ["There is", "There are", "There be", "It is", "They are"].filter((x) => x !== correct),
+      fallbackPool: ["There has", "It are", "Have"],
+      explanation: `Usamos "There is" con singular/incontable y "There are" con plural. Aquí lo correcto es "${correct}".`,
+    }, rng));
+  }
+
+  for (const s of Object.keys(POS_MAP)) for (const t of POS_THINGS) {
+    const subj = s === "I" ? "I like" : `${s} like`;
+    push(assemble({
+      level, category: "grammar", prompt: `${subj} ___ new ${t}.`, correct: POS_MAP[s],
+      distractors: Object.values(POS_MAP).filter((x) => x !== POS_MAP[s]),
+      fallbackPool: ["its", "mine", "theirs"],
+      explanation: `El adjetivo posesivo que corresponde a "${s}" es "${POS_MAP[s]}".`,
+    }, rng));
+  }
+
+  for (const [prompt, correct] of DEM_ITEMS) {
+    push(assemble({
+      level, category: "grammar", prompt, correct,
+      distractors: ["This", "That", "These", "Those"].filter((x) => x !== correct),
+      fallbackPool: ["The", "It", "Them"],
+      explanation: `Demostrativos: "this/that" (singular) y "these/those" (plural); cerca (this/these) o lejos (that/those). Aquí: "${correct}".`,
+    }, rng));
+  }
+
+  for (const [prompt, correct] of HAVEGOT_ITEMS) {
+    push(assemble({
+      level, category: "grammar", prompt, correct,
+      distractors: ["have got", "has got", "have get", "has get", "having got"].filter((x) => x !== correct),
+      fallbackPool: ["got have", "is got", "are got"],
+      explanation: `"have got" se usa con I/you/we/they y "has got" con he/she/it. Aquí lo correcto es "${correct}".`,
+    }, rng));
+  }
+
+  return out;
+}
+
+function buildForLevel(level, difficultyCap, rng, withBasics = false) {
+  const questions = withBasics ? buildBasics(level, rng) : [];
   const verbs = VERBS.filter((v) => v.difficulty <= difficultyCap);
   const adjs = ADJECTIVES;
 
@@ -824,17 +984,20 @@ function buildForLevel(level, difficultyCap, rng) {
 /* ------------------------------------------------------------------ */
 /* Level definitions and main build.                                   */
 /* ------------------------------------------------------------------ */
+// Niveles del Marco Común Europeo de Referencia (MCER / CEFR): A1 → C2.
 const LEVELS = [
-  { id: "B1", name: "B1 — Intermedio", cap: 2, seed: 101, color: "mint",
-    description: "Nivel intermedio: gramática y vocabulario de uso cotidiano." },
-  { id: "B2", name: "B2 — Intermedio alto", cap: 3, seed: 202, color: "sky",
-    description: "Intermedio alto: tiempos verbales más complejos y vocabulario más rico." },
-  { id: "C1", name: "C1 — Avanzado", cap: 4, seed: 303, color: "lavender",
-    description: "Avanzado: matices gramaticales y vocabulario formal." },
-  { id: "C2", name: "C2 — Dominio", cap: 5, seed: 404, color: "peach",
-    description: "Dominio: vocabulario sofisticado, phrasal verbs e idiomática." },
-  { id: "D1", name: "D1 — Maestría", cap: 5, seed: 505, color: "rose",
-    description: "Maestría: léxico erudito y estructuras de gran precisión." },
+  { id: "A1", name: "A1 — Acceso", cap: 1, seed: 51, color: "green", basics: true,
+    description: "Acceso: expresiones cotidianas, verbo to be, plurales y vocabulario básico." },
+  { id: "A2", name: "A2 — Plataforma", cap: 2, seed: 61, color: "lemon", basics: true,
+    description: "Plataforma: pasado simple, comparativos y vocabulario de uso frecuente." },
+  { id: "B1", name: "B1 — Umbral", cap: 2, seed: 101, color: "mint",
+    description: "Umbral: gramática y vocabulario de uso cotidiano, present perfect y modales." },
+  { id: "B2", name: "B2 — Avanzado", cap: 3, seed: 202, color: "sky",
+    description: "Avanzado: tiempos verbales más complejos y vocabulario más rico." },
+  { id: "C1", name: "C1 — Dominio operativo", cap: 4, seed: 303, color: "lavender",
+    description: "Dominio operativo eficaz: matices gramaticales y vocabulario formal." },
+  { id: "C2", name: "C2 — Maestría", cap: 5, seed: 404, color: "peach",
+    description: "Maestría: vocabulario sofisticado, phrasal verbs e idiomática." },
 ];
 
 mkdirSync(OUT_DIR, { recursive: true });
@@ -843,7 +1006,7 @@ const manifest = [];
 for (const lvl of LEVELS) {
   counter = 0;
   const rng = makeRng(lvl.seed);
-  const qs = buildForLevel(lvl.id, lvl.cap, rng);
+  const qs = buildForLevel(lvl.id, lvl.cap, rng, lvl.basics);
 
   // Integrity checks.
   for (const q of qs) {
