@@ -13,6 +13,8 @@ import { cn } from "@/lib/utils";
 import { TEST_SIZE } from "@/lib/quiz";
 
 const CARD_TONES: Record<string, string> = {
+  green: "bg-pastel-green/50 hover:bg-pastel-green",
+  lemon: "bg-pastel-lemon/50 hover:bg-pastel-lemon",
   mint: "bg-pastel-mint/50 hover:bg-pastel-mint",
   sky: "bg-pastel-sky/50 hover:bg-pastel-sky",
   lavender: "bg-pastel-lavender/50 hover:bg-pastel-lavender",

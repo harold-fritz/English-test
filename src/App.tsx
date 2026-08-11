@@ -126,7 +126,7 @@ export default function App() {
       )}
 
       <footer className="pb-6 text-center text-xs text-muted-foreground">
-        English Test · Práctica por niveles B1–D1
+        English Test · Práctica por niveles MCER A1–C2
       </footer>
     </main>
   );

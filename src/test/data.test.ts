@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll } from "vitest";
 import { LEVELS, loadPool } from "@/data";
 import type { Question } from "@/types";
 
-const LEVEL_IDS = ["B1", "B2", "C1", "C2", "D1"];
+const LEVEL_IDS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const pools: Record<string, Question[]> = {};
 
 beforeAll(async () => {
@@ -12,7 +12,7 @@ beforeAll(async () => {
 });
 
 describe("question pools integrity", () => {
-  it("defines the expected levels B1..D1", () => {
+  it("defines the expected MCER levels A1..C2", () => {
     expect(LEVELS.map((l) => l.id)).toEqual(LEVEL_IDS);
   });
 

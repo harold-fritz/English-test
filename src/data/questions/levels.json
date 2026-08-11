@@ -1,37 +1,44 @@
 [
   {
+    "id": "A1",
+    "name": "A1 — Acceso",
+    "description": "Acceso: expresiones cotidianas, verbo to be, plurales y vocabulario básico.",
+    "color": "green",
+    "count": 714
+  },
+  {
+    "id": "A2",
+    "name": "A2 — Plataforma",
+    "description": "Plataforma: pasado simple, comparativos y vocabulario de uso frecuente.",
+    "color": "lemon",
+    "count": 823
+  },
+  {
     "id": "B1",
-    "name": "B1 — Intermedio",
-    "description": "Nivel intermedio: gramática y vocabulario de uso cotidiano.",
+    "name": "B1 — Umbral",
+    "description": "Umbral: gramática y vocabulario de uso cotidiano, present perfect y modales.",
     "color": "mint",
     "count": 617
   },
   {
     "id": "B2",
-    "name": "B2 — Intermedio alto",
-    "description": "Intermedio alto: tiempos verbales más complejos y vocabulario más rico.",
+    "name": "B2 — Avanzado",
+    "description": "Avanzado: tiempos verbales más complejos y vocabulario más rico.",
     "color": "sky",
     "count": 697
   },
   {
     "id": "C1",
-    "name": "C1 — Avanzado",
-    "description": "Avanzado: matices gramaticales y vocabulario formal.",
+    "name": "C1 — Dominio operativo",
+    "description": "Dominio operativo eficaz: matices gramaticales y vocabulario formal.",
     "color": "lavender",
     "count": 769
   },
   {
     "id": "C2",
-    "name": "C2 — Dominio",
-    "description": "Dominio: vocabulario sofisticado, phrasal verbs e idiomática.",
+    "name": "C2 — Maestría",
+    "description": "Maestría: vocabulario sofisticado, phrasal verbs e idiomática.",
     "color": "peach",
-    "count": 809
-  },
-  {
-    "id": "D1",
-    "name": "D1 — Maestría",
-    "description": "Maestría: léxico erudito y estructuras de gran precisión.",
-    "color": "rose",
     "count": 809
   }
 ]
