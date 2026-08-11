@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Soft pastel theme. Background is a warm cream, primary a muted lilac. */
+    --background: 40 60% 97%;
+    --foreground: 280 20% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 20% 25%;
+
+    --primary: 265 45% 62%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 70% 90%;
+    --secondary-foreground: 205 40% 30%;
+
+    --muted: 280 25% 94%;
+    --muted-foreground: 280 12% 45%;
+
+    --accent: 340 70% 92%;
+    --accent-foreground: 340 40% 35%;
+
+    --destructive: 0 72% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 55% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 280 20% 88%;
+    --input: 280 20% 88%;
+    --ring: 265 45% 62%;
+
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: radial-gradient(
+        circle at 15% 15%,
+        hsl(340 80% 95%) 0,
+        transparent 45%
+      ),
+      radial-gradient(circle at 85% 10%, hsl(200 80% 94%) 0, transparent 40%),
+      radial-gradient(circle at 50% 100%, hsl(150 60% 94%) 0, transparent 45%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}

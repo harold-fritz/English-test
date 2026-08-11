@@ -1,0 +1,37 @@
+[
+  {
+    "id": "B1",
+    "name": "B1 — Intermedio",
+    "description": "Nivel intermedio: gramática y vocabulario de uso cotidiano.",
+    "color": "mint",
+    "count": 617
+  },
+  {
+    "id": "B2",
+    "name": "B2 — Intermedio alto",
+    "description": "Intermedio alto: tiempos verbales más complejos y vocabulario más rico.",
+    "color": "sky",
+    "count": 697
+  },
+  {
+    "id": "C1",
+    "name": "C1 — Avanzado",
+    "description": "Avanzado: matices gramaticales y vocabulario formal.",
+    "color": "lavender",
+    "count": 769
+  },
+  {
+    "id": "C2",
+    "name": "C2 — Dominio",
+    "description": "Dominio: vocabulario sofisticado, phrasal verbs e idiomática.",
+    "color": "peach",
+    "count": 809
+  },
+  {
+    "id": "D1",
+    "name": "D1 — Maestría",
+    "description": "Maestría: léxico erudito y estructuras de gran precisión.",
+    "color": "rose",
+    "count": 809
+  }
+]
